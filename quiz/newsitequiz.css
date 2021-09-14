@@ -1,0 +1,311 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+}
+
+span {
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#quiz_static {
+  width: 100%;
+  height: auto;
+}
+
+#quiz_offer_box {
+  background: #ffad6f;
+  padding: 10px 4%;
+  text-align: center;
+  min-height: 40px;
+  border: 0;
+}
+
+#quiz_offer_box .freegift-description {
+  width: 100%;
+  text-align: left;
+  line-height: 40px;
+}
+
+.freegift-description p {
+}
+
+.timer-count {
+  background: #fff;
+  padding: 0 10px;
+  border-radius: 5px;
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  box-sizing: border-box;
+  float: right;
+}
+
+.timer-count img {
+  position: relative;
+  bottom: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 25px;
+  height: 40px;
+  background-color: #000;
+  margin-right: 5px;
+}
+
+
+#quiz_progress_container {
+  width: 92%;
+  height: 6px;
+  margin: 10px 4%;
+  background: #ffefe4;
+  border-radius: 3px;
+}
+
+#quiz_progress_active {
+  width: 20%;
+  height: 6px;
+  border-radius: 3px;
+  background: #fd6d21;
+  transition: 1s;
+}
+
+#svg-quizlogo {
+  fill: #fd6d21;
+  margin-left: 4%;
+  width: 22%;
+  margin-top: 6px;
+}
+
+#quiz_dynamic {
+    width: 100%;
+    height: auto;
+}
+
+#quiz_dynamic h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.quiz_slide {
+  width: 100%;
+  height: auto;
+}
+
+.inactive {
+  display: none;
+}
+
+.question {
+  font-family: Montserrat, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  display: block;
+  padding: 20px 4% 30px 4%;
+  box-shadow: 0 16px 16px 0 rgba(255,170,106,.22);
+  position: relative;
+  z-index: 20;
+}
+
+.question.free_gift {
+  box-shadow: none;
+}
+
+.question.free_gift p {
+  font-size: 13px;
+}
+
+.question p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #999;
+}
+
+#question_email .question {
+  margin-top: 30%;
+  box-shadow: none;
+}
+
+.answers {
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 4% 80px 4%;
+  position: relative;
+  z-index: 10;
+}
+
+button {
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  font-weight: 300;
+  letter-spacing: .0625em;
+  font-size: 1.0625rem;
+  padding: 1rem 1.4rem;
+  border-radius: 25px;
+  border: 1px solid #bbb;
+  background-color: #fff;
+}
+
+button.answer_selected {
+  background-color: #ffefe4;
+  border: 1px solid #fd6d21;
+}
+
+.one_answer .answers button {
+  width: 100%;
+}
+
+.answers > div {
+  flex: 0 0 auto;
+  padding: 8px;
+}
+
+.next_button_background {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 4%;
+  background-color: #fff;
+  z-index: 100;
+  box-shadow: 0 0 16px 0 rgba(255,170,106,.22);
+}
+
+#question_email .next_button_background {
+  position: relative;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+#question_email .next_button {
+  width: 100%;
+}
+
+#question_email label {
+  display: block;
+  margin: 0 4%;
+  font-weight: 500;
+  color: #999;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+#question_email input {
+  display: block;
+  margin: 0 4%;
+  width: 92%;
+  border-radius: 5px;
+  border: 1.5px solid #ccc;
+  font-size: 24px;
+  padding: 2%;
+  color: #333;
+  font-family: Montserrat, sans-serif;
+}
+
+.next_button {
+  font-family: Montserrat, sans-serif;
+  width: 92%;
+  padding: 1rem 0;
+  background: #fd6d21;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: .0625em;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  margin: 0;
+  border: 0;
+}
+
+.next_button:disabled {
+  background-color: #aaa;
+}
+
+.freegift_answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4%;
+  margin: 0 4%;
+}
+
+.freegift_answers > div{
+  display: block;
+}
+
+.gift_block{
+  width:100%;
+  height:100%;
+}
+
+.gift_image {
+  width: 100%;
+  height: auto;
+}
+
+.gift_title {
+  margin-bottom: 15px;
+}
+
+.gift_title p {
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+  color: #999;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.gift_title h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+p.gift_price {
+  display: inline-block;
+  width: 80px;
+  color: #999;
+  font-size: 12px;
+}
+
+.answer_selected .gift_ATC {
+  background: #1e8020;
+}
+
+.gift_ATC {
+  float: right;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: #ffad6f;
+  border: 0;
+}
+
+.svg-plusbutton {
+  fill: #fff;
+}
+
+.answer_selected .svg-plusbutton {
+  display: none;
+}
+
+.svg-checkmark {
+  fill: #fff;
+  display: none;
+}
+
+.answer_selected .svg-checkmark {
+  display: block;
+}
