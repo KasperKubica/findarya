@@ -142,7 +142,7 @@ p {
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 4% 80px 4%;
+  padding: 40px 4% 100px 4%;
   position: relative;
   z-index: 10;
 }
